@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&display=swap');
+
+.small-logo {
+    position: relative;
+    transform: translateX(50%);
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.items-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Barlow Condensed';
+
+    .menu-item {
+        text-align: center;
+        font-size: 25px;
+        padding: 20px 0px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .social {
+        text-align: center;
+        margin-top: 30px;
+
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+
