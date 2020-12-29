@@ -6,7 +6,7 @@ import './navigationsmall.scss'
 const NavigationSmall = ({ router }) => {
     return(
 
-        <Menu pageWrapId={ "sections" } outerContainerId={ "home" } right width={'280px'}>
+        <Menu outerContainerId={ "home" } right width={'280px'}>
             <div className='small-logo'>
                 <img src={logo} alt='inner-menu-company-logo'/>
             </div>
