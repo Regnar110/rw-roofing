@@ -110,6 +110,27 @@
     color: #FFFFFF;
   }
 
+
+  .slider-dots {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    bottom: 20px;
+
+    .dot {
+      margin: 20px;
+      width: 15px;
+      height: 15px;
+      border: 1px solid white;
+      border-radius: 50%;
+      transition: 0.5s linear;
+    }
+
+    .dot-active {
+      background-color: rgba(255, 0, 0, 0.5);
+    }
+  }
   
   @media (max-width: 400px) {
     .slider-content 
@@ -124,3 +145,4 @@
             } 
         } 
   }
+
