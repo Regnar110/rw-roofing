@@ -90,6 +90,7 @@ const HomeSlider  = () => {
                     })
                 }
             </div>
+            <div className='mobile-scroll'></div>
         </div>
 
 

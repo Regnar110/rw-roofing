@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
-
+.slider-container {
+  touch-action: auto;
+  -ms-touch-action: auto;
+}
   .wrapper {
     max-width: 1335px;
     box-sizing: border-box;
@@ -17,7 +20,6 @@
   }
   
   .slider-wrapper {
-    overflow: hidden;
     position: relative;
     height: 100vh;
     font-family: 'Source Sans Pro', sans-serif;
@@ -146,3 +148,10 @@
         } 
   }
 
+.mobile-scroll { // fixing bug with blocking touch scroll on mobile devices
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
+}
