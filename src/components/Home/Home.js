@@ -2,9 +2,9 @@ import { useState } from 'react'
 import NavigationLarge from '../NavigationLarge/NavigationLarge'
 import NavigationSmall from '../NavigationSmall/NavigationSmall'
 import HomeSlider from '../HomeSlider/HomeSlider'
+import Services from '../Services/Services'
 
 const Home = ({ navType }) => {
-
     const [router, setRoute] = useState('home')
 
     const routeCheckHandler = (route) => {
@@ -18,9 +18,8 @@ const Home = ({ navType }) => {
             navType === 'large' ? <NavigationLarge router={routeCheckHandler}/> : <NavigationSmall router={routeCheckHandler} />
         }
         <HomeSlider />
-        {/* <div id='sections' style={{backgroundColor: 'green', height: '1000px'}}>asdasd</div> */}
+        <Services />
       </div>
-      
     )
 }
 

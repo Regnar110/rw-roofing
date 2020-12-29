@@ -67,7 +67,7 @@ const HomeSlider  = () => {
 
     return(
         <div className='slider-container'>
-            <Slider className="slider-wrapper" autoplay={3000} onSlideChange={({slideIndex}) => dotChanger(slideIndex)}>
+            <Slider className="slider-wrapper" autoplay={4000} onSlideChange={({slideIndex}) => dotChanger(slideIndex)}>
                 {content.map((item, index) => (
                 <div
                     key={index}
