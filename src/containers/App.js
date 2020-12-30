@@ -1,20 +1,32 @@
 // import { Frame, Scroll, useCycle } from "framer"
 import { useState } from 'react';
+import {Switch, Route} from 'react-router-dom'
 import './App.scss';
 import Home from '../components/Home/Home'
+import NavigationLarge from '../components/NavigationLarge/NavigationLarge'
+import NavigationSmall from '../components/NavigationSmall/NavigationSmall'
+
 
 
 function App() {
-  const [navType, setNav] = useState('large')
+  const [navType, setNav] = useState('large');
 
   const changeNavBar = () => {
-    const navBarRender = window.matchMedia("(max-width: 565px)")
+    const navBarRender = window.matchMedia("(max-width: 620px)")
       navBarRender.matches ? setNav('small') : setNav('large');
   }
   window.addEventListener('resize', changeNavBar);
 
   return(
-    <Home navType={navType}/>
+    <div>
+      {
+        navType === 'large' ? <NavigationLarge/> : <NavigationSmall/>
+      }
+      <Switch>
+        <Route exact path='/' component={Home}/>
+      </Switch>
+    </div>
+
   )
   
 }

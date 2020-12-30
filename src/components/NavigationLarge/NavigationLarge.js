@@ -1,12 +1,12 @@
 import React from 'react';
 import './navigationlarge.scss'
 import logo from '../../assets/logo-bg.png'
+import {Link} from 'react-router-dom';
 
-const NavigationLarge = ({ router }) => {
+const NavigationLarge = () => {
     return(
         <nav className='navbar'>
             <div className='logo'
-            onClick={() => router('home')} 
             style={
                 {
                     background: `url(${logo}) center center no-repeat`,
@@ -15,10 +15,12 @@ const NavigationLarge = ({ router }) => {
             }>
             </div>
             <div className='directory'>
-                <div className='nav-route' onClick={() => router('about')}>O firmie<div></div></div>
-                <div className='nav-route' onClick={() => router('projects')}>Realizacje<div></div></div>
-                <div className='nav-route' onClick={() => router('services')}>Usługi<div></div></div>
-                <div className='nav-route' onClick={() => router('contact')}>Kontakt<div></div></div>
+                <Link to='/' className='nav-route'>Start<div></div></Link>
+                <Link to='/about' className='nav-route'>O firmie<div></div></Link>
+                <Link to='/services' className='nav-route'>Usługi<div></div></Link>
+                <Link to='/projects' className='nav-route'>Realizacje<div></div></Link>
+                <Link to='/contact' className='nav-route'>Kontakt<div></div></Link>
+
             </div>
             <div className='social'><i className="fab fa-facebook"></i></div>
         </nav>
