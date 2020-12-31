@@ -99,11 +99,13 @@
         .detailsBtn {
             color: orange;
             border-radius: 5px;
+            border: 1px solid orange;
             padding: 5px 20px 5px;
             text-align: center;
             background-color: rgba(29, 29, 29, 0.781);
             letter-spacing: 3px;
             cursor: pointer;
+            font-weight: 500;
         }
     }
 
