@@ -1,24 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 .contact {
-    height: 800px;
-    width: 100%;
-    background-color: green;
+    background-color:orange;
+    font-family: 'Open Sans Pro', sans-serif;
 
     h1 {
         margin: 0;
+        text-align: center;
+        padding: 90px 0px 50px;
     }
-    .mapouter{
-        position:relative;
-        text-align:right;
-        width:50%;
+
+    .contact-content {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px;
+        .contact-details {
+            width: 50%;
+            text-align: center;
+
+            h2 {
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 80px;
+                }
+            }
+
+            .tel {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 35px;
+                align-items: center;
+                justify-content: center;
+
+                
+                .tel-icon {
+                    height: 100%;
+                    background-color: white;
+                    border-radius: 50%;
+                    padding: 5px;
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+
+                    img {
+                        width: 50px;
+                    }
+                }
+
+                .tel-detail {
+                    font-weight: 900;
+                    margin-left: 30px;
+                    text-align: center;
+                    font-size: 17px;
+                    padding: 0;
+                    
+                    #desc {
+                        font-weight: 300;
+                        margin: 0;
+                        text-align: center;
+                        font-size: calc(12px + (18 - 12) * ((100vw - 280px) / (1600 - 280)));
+                    }
+                }
+            }
+
+            .mail {
+                margin: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                .mail-icon {
+                    background-color: white;
+                    border-radius: 50%;
+                    padding: 5px;
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
+
+                    img {
+                        width: 50px;
+                    }
+                }
+
+                #mail {
+                    font-size: calc(14px + (20 - 14) * ((100vw - 280px) / (1600 - 280)));
+                    font-weight: 900;
+                    margin-left: 30px;
+                }
+            }
+        }
+
+        .mapouter {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+
+            .gmap_canvas {
+                iframe {
+                    width:600px;
+                    height:450px;
+                }
+            }
+        }
     }
-    .gmap_canvas {
-        overflow:hidden;
-        background:none !important;
-        width: 100%;
-        height: 100%;
-        iframe {
-            width:100%;
-            height:100%;
+
+    .rodo-footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+        padding-bottom: 30px;
+
+        span {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: calc(12px + (16 - 12) * ((100vw - 280px) / (1600 - 280)));
+            margin: 0;
+        }
+    }
+
+    @media screen and(max-width: 1100px) {
+        .contact-content {
+            padding: 10px;
+            .contact-details {
+                width: 100%;
+            }
+
+            .mapouter {
+                .gmap_canvas{
+                    iframe {
+                        width:600px;
+                        height:450px;
+                    }
+                }
+
+            }
+
+            .mapouter {
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and(max-width: 620px) {
+        .contact-content {
+            padding: 10px;
+            .contact-details {
+                width: 100%;
+            }
+
+            .mapouter {
+                width: 100%;
+
+                .gmap_canvas{
+                    iframe {
+                        width:300px;
+                        height:280px;
+                    }
+                }
+            }
         }
     }
 }

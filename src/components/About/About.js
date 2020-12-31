@@ -12,7 +12,7 @@ const About = () => {
             }
         }>
             <div className='about-logo'>
-                <img src={logoabout}/>
+                <img alt='about' src={logoabout}/>
             </div>
             <div className='about-content'>
                 <p className='about-text'>JESTEŚ ZAINTERESOWANY NASZĄ OFERTĄ<span>?</span></p>

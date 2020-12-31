@@ -53,16 +53,17 @@
         width: 32px;
         height: 32px;
         text-indent: -9999px;
-        cursor: pointer;
   }
   
   .previousButton {
+    cursor: pointer;
     left: 5px;
     -webkit-transform: rotate(180deg) translateY(calc(50% + 0px));
             transform: rotate(180deg) translateY(calc(50% + 0px));
   }
   
   .nextButton {
+    cursor: pointer;
     right: 5px;
   }
   
