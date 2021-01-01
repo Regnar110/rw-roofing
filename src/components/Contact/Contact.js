@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './contact.scss'
 import tel from '../../assets/contact/tel.svg'
 import mail from '../../assets/contact/mail.svg'
@@ -57,7 +57,7 @@ const Contact = () => {
                     – realizację i umówienie terminów wykonania prac dekarskich.
                 </p>
             </footer>
-        </div>  
+        </div> 
     )
 }
 

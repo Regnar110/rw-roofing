@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom'
 
 const NavigationSmall = () => {
     return(
-
-        <Menu outerContainerId={ "home" } right width={'280px'}>
+        <Menu right width={'280px'}>
             <div className='small-logo'>
                 <img src={logo} alt='inner-menu-company-logo'/>
             </div>

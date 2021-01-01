@@ -4,9 +4,11 @@
     font-family: 'Open Sans Pro', sans-serif;
 
     h1 {
+        background-color: white;
         margin: 0;
-        text-align: center;
-        padding: 90px 0px 50px;
+        text-align: start;
+        padding: 90px 70px 50px;
+        font-size: calc(40px + (80 - 40) * ((100vw - 280px) / (1600 - 280)));
     }
 
     .contact-content {

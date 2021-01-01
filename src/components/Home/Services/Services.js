@@ -1,11 +1,11 @@
 import './services.scss'
 import Tilt from 'react-tilt'
-import bg1 from '../../assets/services/bg1.jpg'
-import bg2 from '../../assets/services/bg2.jpg'
-import bg3 from '../../assets/services/bg3.jpg'
-import bg4 from '../../assets/services/bg4.jpg'
-import bg5 from '../../assets/services/bg5.png'
-import bg6 from '../../assets/services/bg6.jpg'
+import bg1 from '../../../assets/services/bg1.jpg'
+import bg2 from '../../../assets/services/bg2.jpg'
+import bg3 from '../../../assets/services/bg3.jpg'
+import bg4 from '../../../assets/services/bg4.jpg'
+import bg5 from '../../../assets/services/bg5.png'
+import bg6 from '../../../assets/services/bg6.jpg'
 
 
 const Services = () => {

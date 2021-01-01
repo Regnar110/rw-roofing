@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.scss'
-import aboutBg from '../../assets/about/about-bg2.jpg'
-import logoabout from '../../assets/about/safety.svg'
+import aboutBg from '../../../assets/about/about-bg2.jpg'
+import logoabout from '../../../assets/about/safety.svg'
 
 const About = () => {
     return (
