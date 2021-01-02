@@ -31,7 +31,7 @@ const About = () => {
                 <div className='bars'>
                     <ProgressBar
                         progress={progress}
-                        radius={120}
+                        radius={100}
                         initialAnimation={true}
                         transition={'1s linear'}
                         className={'progress'}
@@ -51,10 +51,10 @@ const About = () => {
                     </ProgressBar>
                     <ProgressBar
                         progress={progress}
-                        radius={120}
+                        radius={100}
                         initialAnimation={true}
                         transition={'1s linear'}
-                        className={'progress'}
+                        className={'progress'} 
                         strokeWidth={20}
                         trackStrokeWidth={10}
                         cut={180}
