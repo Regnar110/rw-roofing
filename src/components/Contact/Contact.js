@@ -1,13 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './contact.scss'
 import tel from '../../assets/contact/tel.svg'
 import mail from '../../assets/contact/mail.svg'
 import logo from '../../assets/logo-bg.png'
+import Header from '../../components/Header/Header'
 
 const Contact = () => {
     return (
         <div className='contact'>
-            <h1>Kontakt</h1>
+            <Header header={'Kontak'}/>
             <div className='contact-content'>
                 <div className='contact-details'>
                     <h2>Dekarstwo <img alt='rw' src={logo}/></h2>

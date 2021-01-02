@@ -1,0 +1,43 @@
+.outer-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    padding: 50px;
+
+    .site-content {
+        width: 50%;
+        display: flex;
+        font-size: 25px;
+        
+        p {
+            line-height: 40px;
+        }
+    }
+
+    .bars {
+        width: 50%;
+        display: flex;
+
+        .progress {
+            margin: 20px 50px 20px;
+            font-size: 30px;
+        }
+
+        .progress-content {
+            white-space: nowrap;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            user-select: none;
+        }
+    }
+
+}

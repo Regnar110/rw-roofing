@@ -1,0 +1,14 @@
+.service-item {
+    .service-item-header {
+        background-color: orange;
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            padding: 50px 50px 50px;
+            color: white;
+            font-size: calc(25px + (70 - 25) * ((100vw - 280px) / (1600 - 280)));
+        }
+    }
+    
+}

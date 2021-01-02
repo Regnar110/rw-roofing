@@ -1,0 +1,149 @@
+.small-slider-container {
+    position: relative;
+    touch-action: auto;
+    -ms-touch-action: auto;
+  }
+    .wrapper {
+      max-width: 1335px;
+      box-sizing: border-box;
+      padding: 0 20px;
+      margin: auto;
+    }
+    
+    .wrapper a {
+      display: inline-block;
+      margin: 5px;
+    }
+    
+    .wrapper a:first-child {
+      margin-left: 0;
+    }
+    
+    .small-slider-wrapper {
+      position: relative;
+      height: 500px;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    .slide {
+      height: 100%;
+      background-size: cover !important;
+    }
+    
+    .slide::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.9)));
+        background: linear-gradient(transparent, rgba(0, 0, 0, 0.9));
+        bottom: 0;
+        left: 0;
+    }
+    
+    .previousButton, .nextButton {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 10;
+          background: url('../../../assets/r-arrow.svg') no-repeat center center / 16px;
+          background-color: rgba(255, 255, 255, 0.432);
+          border-radius: 10px;
+          width: 32px;
+          height: 32px;
+          text-indent: -9999px;
+    }
+    
+    .previousButton {
+      cursor: pointer;
+      left: 5px;
+      -webkit-transform: rotate(180deg) translateY(calc(50% + 0px));
+              transform: rotate(180deg) translateY(calc(50% + 0px));
+    }
+    
+    .nextButton {
+      cursor: pointer;
+      right: 5px;
+    }
+    
+    .small-slider-content {
+      text-align: center;
+    }
+    
+    .small-slider-content .small-inner {
+      padding: 0;
+      margin: 0px;
+      box-sizing: border-box;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    .small-slider-content .small-inner p {
+      text-shadow: 10px 10px black;
+      text-align: start;
+      color: #FFFFFF;
+      font-weight: 900;
+      line-height: 1.5;
+      font-size: calc(30px + (50 - 30) * ((100vw - 280px) / (1600 - 280)));
+      margin: 0px;
+      padding-right: calc(0px + (700 - 0) * ((100vw - 400px) / (1600 - 400)));
+      white-space: nowrap;
+      max-width: 640px;
+    }
+    
+    .small-slider-content section span {
+      color: #FFFFFF;
+    }
+  
+  
+    .slider-dots {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      bottom: 20px;
+  
+      .dot {
+        margin: calc(10px + (20 - 10) * ((100vw - 400px) / (1600 - 400)));
+        width: 15px;
+        height: 15px;
+        border: 1px solid white;
+        border-radius: 50%;
+        transition: 0.5s linear;
+      }
+  
+      .dot-active {
+        background-color:orange;
+      }
+    }
+    
+    @media (max-width: 400px) {
+      .slider-content 
+          .small-inner{
+              padding: 0px;
+              p{
+                  text-align: center;
+              }
+              h1 {
+                  text-align: center;
+                  white-space: nowrap;
+              } 
+          } 
+    }
+  
+  .mobile-scroll { // fixing bug with blocking touch scroll on mobile devices
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+  }

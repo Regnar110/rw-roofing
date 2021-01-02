@@ -4,10 +4,11 @@ import About from './About/About';
 import Projects from './Projects/Projects'
 
 
-const Home = () => {
+const Home = ({sliderContent}) => {
+
     return (
       <div id='home' className='home'>
-        <HomeSlider />
+        <HomeSlider sliderContent={sliderContent}/>
         <Services />
         <About />
         <Projects />

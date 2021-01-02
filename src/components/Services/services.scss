@@ -1,0 +1,58 @@
+.outer-services {
+    .service-nav {
+        background-color: rgba(0, 0, 0, 0.808);
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        font-size: calc(13px + (28 - 13) * ((100vw - 700px) / (1600 - 700)));
+        padding: 20px;
+
+        .service-link {
+            padding: 5px;
+            color:orange;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+            div {
+                display: flex;
+                img {
+                    margin-right: 5px;
+                    transition: 0.1s linear;
+                    width: calc(20px + (30 - 20) * ((100vw - 700px) / (1600 - 700)));
+                    color: white;
+                }
+            }
+            
+            .service-underline {
+                width: 0%;
+                height: 1px;
+                background-color: rgb(255, 255, 255); 
+                transition: 0.1s linear;
+                margin-top: 5px;
+            }
+            &:hover {
+                div {
+                    img{
+                        transform: rotate(90deg);
+                    }
+                }
+                .service-underline{
+                   width: 110%; 
+                }
+            }
+        }
+    }
+
+
+    @media screen and(max-width: 780px){
+        .service-nav {
+            flex-direction: column;
+            font-size: 18px;
+            padding: 0;
+        }
+    }
+}

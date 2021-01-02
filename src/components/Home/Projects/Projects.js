@@ -1,6 +1,7 @@
 import React from 'react'
 import './projects.scss'
 import Gallery from 'react-grid-gallery';
+import { Link } from 'react-router-dom'
 
 
 const Projects = () => {
@@ -73,7 +74,7 @@ const Projects = () => {
                 <div className='projects-text'>
                     <p>
                         Zrealizowaliśmy już bardzo wiele projektów dla klientów indywidualnych jak również dla firm.
-                        Projekty realiujemy podchodząc do każdego z nich indywidualnie, będąc w ciągłym kontakcie z klientem i informując go o zmianach jak i postępach prac. 
+                        Projekty realizujemy podchodząc do każdego z nich indywidualnie, będąc w ciągłym kontakcie z klientem i informując go o zmianach jak i postępach prac. 
                         Każdy projekt realizowany jest z myślą o zadowoleniu klienta/klientów a także o dotrzymaniu terminów i przestrzeganiu najlepszych praktyk dekarskich.
                     </p>
                 </div>
@@ -84,7 +85,7 @@ const Projects = () => {
             <p className='projects-footer'>
                 Zapraszamy do zapoznania się z całą galerią, w której zestawione są nasze wszystkie realizacje projektów.
             </p>
-            <div className='projects-link'>Galeria</div> 
+            <Link to='/projects'><div className='projects-link'>Galeria</div></Link>
         </div>
     )
 }

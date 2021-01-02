@@ -12,6 +12,7 @@
         margin: 0px 0px 30px;
         padding-top: 20px;
         text-align: center;
+        font-size: calc(30px + (50 - 30) * ((100vw - 280px) / (1600 - 280)));
     }
 
     .projects-content {
@@ -25,7 +26,7 @@
             padding: 30px;
             font-size: calc(23px + (30 - 23) * ((100vw - 280px) / (1600 - 280)));
             font-weight: 500;
-            text-align: center;
+            text-align: start;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -47,7 +48,7 @@
     }
     
     .projects-link {
-        font-size: calc(23px + (40 - 23) * ((100vw - 280px) / (1600 - 280)));
+        font-size: calc(23px + (30 - 23) * ((100vw - 280px) / (1600 - 280)));
         border: 1px solid orange;
         color: orange;
         border-radius: 5px;

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
 .slider-container {
+  position: relative;
   touch-action: auto;
   -ms-touch-action: auto;
 }
@@ -99,7 +100,7 @@
     color: #FFFFFF;
     font-weight: 900;
     line-height: 1;
-    font-size: calc(30px + (110 - 30) * ((100vw - 280px) / (1600 - 280)));
+    font-size: calc(30px + (90 - 30) * ((100vw - 280px) / (1600 - 280)));
     margin: 30px auto 30px;
     white-space: nowrap;
     max-width: 640px;

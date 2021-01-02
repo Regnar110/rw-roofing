@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 import Slider from 'react-animated-slider';
 import 'react-animated-slider/build/horizontal.css';
-import './slider-animation.scss';
-import './homeslider.scss';
+import '../../Home/HomeSlider/slider-animation.scss';
+import './serviceslider.scss';
 
 const HomeSlider  = ({ sliderContent }) => {
 
@@ -23,19 +23,18 @@ const HomeSlider  = ({ sliderContent }) => {
     }
 
     return(
-        <div className='slider-container'>
-            <Slider className="slider-wrapper" autoplay={4000} onSlideChange={({slideIndex}) => dotChanger(slideIndex)}>
+        <div className='small-slider-container'>
+            <Slider className="small-slider-wrapper" autoplay={4000} onSlideChange={({slideIndex}) => dotChanger(slideIndex)}>
                 {sliderContent.map((item, index) => (
                 <div
                     key={index}
-                    className="slider-content"
+                    className="small-slider-content"
                     style={{ background: `url('${item.image}') no-repeat center center`}}
                 >
-                    <div className="inner">
-                        <h1>{item.title}</h1>
+                    <div className="small-inner">
                         <p>{item.line1}</p>
                         <p>{item.line2}</p>
-                        <p>{item.line3}<span>{item.line4}</span></p>
+                        <p>{item.line3}</p>
                     </div>
                 </div>
                 ))}

@@ -6,6 +6,7 @@ import bg3 from '../../../assets/services/bg3.jpg'
 import bg4 from '../../../assets/services/bg4.jpg'
 import bg5 from '../../../assets/services/bg5.png'
 import bg6 from '../../../assets/services/bg6.jpg'
+import { Link } from 'react-router-dom';
 
 
 const Services = () => {
@@ -55,7 +56,10 @@ const Services = () => {
                                         backgroundSize: 'cover'
                                     }}></div>
                                     <div className='service-desc'>
-                                        <div>{title}</div>
+                                        <div>
+                                            {title}
+                                            <div className='underline'></div>
+                                        </div>
                                     </div>
                                 </Tilt>
                             )
@@ -64,7 +68,7 @@ const Services = () => {
                 </div>
                 <div className='more-services'>
                     <p>Aby dowiedzieć się więcej o naszych usługach kliknij niżej.</p>
-                    <div className='detailsBtn'>Więcej</div>
+                    <Link to='/services'><div className='detailsBtn'>Więcej</div></Link>
                 </div>
                 
             </div>
