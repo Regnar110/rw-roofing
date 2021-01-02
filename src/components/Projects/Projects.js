@@ -1,5 +1,4 @@
 import React from 'react';
-import './projects.scss'
 import Header from '../Header/Header'
 
 const Projects = () => {
