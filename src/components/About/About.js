@@ -7,12 +7,15 @@ import background from '../../assets/outerabout/outer-about-bg.jpg'
 
 const About = () => {
     const [progress, setProgress] = useState(0);
+
     useEffect(() => {
-        let isMounted = true; //Warning: Can't perform a React state update on an unmounted component. Zmienna uzyta aby useEffect mógł wiedzieć kiedy jest zamontowany a kiedy nie. Kiedy komponent jest wymontowywany zmienna zmienia wartość na false. DALEJ WYSKAKUJE BŁĄD
-        if(isMounted === true) {
-            progress < 100 && setTimeout(() => setProgress(progress + 1), 20); // uzycie operatora &&. Operator ten mówi że jeżeli dwa wyrażenia są true to całośc jest true i wtedy wyrażenie przestaje działać. Jeżeli jedno z wyrażeń jest false to całośc daje false więc dalej działa operacja
+        let timeout; //zmienna słuząca potem do przechowania operacji asynchronicznej i do czyszczeina po niej
+        if (progress < 100) {
+          timeout = setTimeout(() => { // tiemout staje się operacją setTimeout
+            setProgress(progress + 1)
+          }, 20); 
         }
-        return () => isMounted = false;
+        return () => { clearTimeout(timeout) }; // TZW CleanUP function odpalana przy wymontowaniu komponentu. clearTimeout sprząta po setTimeout - usuwa jego efekt i działanie oraz zapobiega przed dalszym działaniem setTimeout.
       }, [progress]);
 
     return (

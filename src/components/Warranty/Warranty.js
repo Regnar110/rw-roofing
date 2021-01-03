@@ -10,7 +10,7 @@ const Warranty = () => {
     return (
         <div className='warranty' style={{
             background: `url(${background}) center center no-repeat fixed`,
-            backgroundSize: '100%'
+            backgroundSize: 'cover'
         }}> 
             <div className='inner-warranty'>
                 <div className='content'>
