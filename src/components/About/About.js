@@ -7,9 +7,12 @@ import background from '../../assets/outerabout/outer-about-bg.jpg'
 
 const About = () => {
     const [progress, setProgress] = useState(0);
-
     useEffect(() => {
-        progress < 100 && setTimeout(() => setProgress(progress + 1), 20); // uzycie operatora &&. Operator ten mówi że jeżeli dwa wyrażenia są true to całośc jest true i wtedy wyrażenie przestaje działać. Jeżeli jedno z wyrażeń jest false to całośc daje false więc dalej działa operacja
+        let isMounted = true; //Warning: Can't perform a React state update on an unmounted component. Zmienna uzyta aby useEffect mógł wiedzieć kiedy jest zamontowany a kiedy nie. Kiedy komponent jest wymontowywany zmienna zmienia wartość na false. DALEJ WYSKAKUJE BŁĄD
+        if(isMounted === true) {
+            progress < 100 && setTimeout(() => setProgress(progress + 1), 20); // uzycie operatora &&. Operator ten mówi że jeżeli dwa wyrażenia są true to całośc jest true i wtedy wyrażenie przestaje działać. Jeżeli jedno z wyrażeń jest false to całośc daje false więc dalej działa operacja
+        }
+        return () => isMounted = false;
       }, [progress]);
 
     return (
@@ -30,6 +33,7 @@ const About = () => {
                 </div>
                 <div className='bars'>
                     <ProgressBar
+                        key={1}
                         progress={progress}
                         radius={100}
                         initialAnimation={true}
@@ -50,6 +54,7 @@ const About = () => {
                     </div>
                     </ProgressBar>
                     <ProgressBar
+                        key={2}
                         progress={progress}
                         radius={100}
                         initialAnimation={true}

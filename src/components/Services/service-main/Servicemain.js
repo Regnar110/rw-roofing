@@ -12,7 +12,7 @@ const Servicemain = () => {
             <div className='text'>
             <h2>Nasze usługi..</h2>
             <p>
-                Zawód dekarza wymaga przede wszystkim obycia ze środowiskiem pracy jak i praktyki zdobywanej w pracy i na szkoleniach.
+                Zawód dekarza wymaga przede wszystkim obycia ze środowiskiem pracy jak i praktyki zdobywanej w pracy i w trkacie szkoleń.
                 Dlatego nasi pracownicy traktują swoją pracę z szacunkiem, dbają o najmniejsze detale, dobrą komunikację z klientem oraz zawsze starają się podążać za najnowszymi trendami ze świata dekarstwa poprzez uczestniczenie w szkoleniach.
                 Mimo tego, że jesteśmy młodą firmą, zawsze staramy się konkurować z najlepszymi co dodatnio przekłada się na zadowolenie klientów.
                 Usługi, które świadczymy wykonujemy z myślą o kliencie i przede wszystkim w oparciu o dobre praktyki dekarskie.

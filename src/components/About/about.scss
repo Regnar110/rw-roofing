@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     color: white;
     font-weight: 500;
     padding: 50px;
@@ -9,7 +10,7 @@
     .site-content {
         width: 50%;
         display: flex;
-        font-size: 25px;
+        font-size: calc(15px + (20 - 15) * ((100vw - 280px) / (1600 - 280)));
         
         p {
             line-height: 40px;
@@ -19,9 +20,11 @@
     .bars {
         width: 50%;
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
 
         .progress {
-            margin: 20px 50px 20px;
+            margin: 20px 30px 20px;
             font-size: calc(20px + (30 - 20) * ((100vw - 280px) / (1600 - 280)));
 
             .progress-content {
@@ -42,3 +45,22 @@
         }
     }
 }
+
+
+@media screen and (max-width: 1200px) {
+    .outer-about {
+        .site-content {
+            width: 100%;
+            text-align: center;
+            
+            p {
+                line-height: 30px;
+            }
+        }
+
+        .bars {
+            width: 100%;
+        }
+    }
+}
+

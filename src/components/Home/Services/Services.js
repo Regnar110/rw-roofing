@@ -3,8 +3,6 @@ import Tilt from 'react-tilt'
 import bg1 from '../../../assets/services/bg1.jpg'
 import bg2 from '../../../assets/services/bg2.jpg'
 import bg3 from '../../../assets/services/bg3.jpg'
-import bg4 from '../../../assets/services/bg4.jpg'
-import bg5 from '../../../assets/services/bg5.png'
 import bg6 from '../../../assets/services/bg6.jpg'
 import { Link } from 'react-router-dom';
 
@@ -13,24 +11,16 @@ const Services = () => {
 
     const data = [
         {
-            title: 'Budowa Dachów',
+            title: 'Pokrycia dachowe',
             bg: bg1
         },
         {
-            title: 'Naprawa i wymiana dachów',
+            title: 'Naprawa i wymiana',
             bg: bg2
         },
         {
             title: 'Przeglądy',
             bg: bg3
-        },
-        {
-            title: 'Doradztwo i wycena',
-            bg: bg4
-        },
-        {
-            title: 'Konstrukcje dachowe',
-            bg: bg5
         },
         {
             title: 'Montaż stolarki budowlanej',

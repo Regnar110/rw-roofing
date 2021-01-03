@@ -1,0 +1,54 @@
+.warranty {
+    display: flex;
+    .inner-warranty {
+        background-color: rgba(0, 0, 0, 0.747);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .content {
+            width: 33%;
+            margin: 20px 0px 20px;
+            display: flex;
+            flex-direction: column;
+
+            .image {
+                padding: 30px;
+                text-align: center;
+                img {
+                    width: 120px;
+                }
+            }
+
+            .text-content {
+                color: white;
+                text-align: center;
+
+                .warranty-header {
+                    font-size: 40px;
+                    letter-spacing: 2px;
+                }
+
+                .warranty-text {
+                    margin-top: 10px;
+                    font-size: 20px;
+                }
+
+                .warranty-text-two {
+                    margin-top: 10px;
+                    font-size: 15px;
+                }
+            }
+        }    
+    }
+
+    @media screen and(max-width: 800px) {
+        .inner-warranty {
+            .content {
+                width: 100%;
+            }
+        }
+    }
+
+}

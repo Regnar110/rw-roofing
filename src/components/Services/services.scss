@@ -7,18 +7,18 @@
         justify-content: center;
         text-align: center;
         flex-wrap: wrap;
-        font-size: calc(13px + (28 - 13) * ((100vw - 700px) / (1600 - 700)));
-        padding: 20px;
+        font-size: calc(13px + (20 - 13) * ((100vw - 700px) / (1600 - 700)));
 
         .service-link {
             padding: 5px;
             color:orange;
             display: flex;
             flex-direction: column;
-            padding: 20px;
+            padding: 20px 50px 20px;
 
             div {
                 display: flex;
+                align-items: center;
                 img {
                     margin-right: 5px;
                     transition: 0.1s linear;

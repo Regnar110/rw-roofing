@@ -1,14 +1,60 @@
 .service-item {
+    display: flex;
+    flex-direction: column;
+
     .service-item-header {
         background-color: orange;
 
         h1 {
             text-align: center;
             margin: 0;
-            padding: 50px 50px 50px;
+            padding: 50px 30px 50px;
             color: white;
             font-size: calc(25px + (70 - 25) * ((100vw - 280px) / (1600 - 280)));
         }
     }
-    
+
+    .service-item-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .image-container {
+            width: 50%;
+            min-height: 600px;
+        }
+
+        .text-content {
+            background-color: rgb(228, 228, 228);
+            width: 50%;
+            
+            p{
+                margin: 0px;
+                font-size: calc(15px + (20 - 15) * ((100vw - 280px) / (1600 - 280)));
+                line-height: 30px;
+                padding: 30px;
+            }
+
+            .tel {
+                background: orange;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    @media screen and(max-width: 1000px) {
+        .service-item-content {
+            text-align: center;
+            flex-direction: row-reverse;
+            .image-container {
+                width: 100%;
+                height: 500px;
+            }
+            .text-content {
+                width: 100%;
+            }
+        }
+    }
 }
