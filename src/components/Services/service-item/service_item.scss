@@ -27,6 +27,10 @@
         .text-content {
             background-color: rgb(228, 228, 228);
             width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
             
             p{
                 margin: 0px;
@@ -37,6 +41,7 @@
 
             .tel {
                 background: orange;
+                width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;

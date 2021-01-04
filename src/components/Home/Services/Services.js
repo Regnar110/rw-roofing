@@ -12,19 +12,23 @@ const Services = () => {
     const data = [
         {
             title: 'Pokrycia dachowe',
-            bg: bg1
+            bg: bg1,
+            path: 'services/roof-building'
         },
         {
             title: 'Naprawa i wymiana',
-            bg: bg2
+            bg: bg2,
+            path: '/services/repairs'
         },
         {
             title: 'Przeglądy',
-            bg: bg3
+            bg: bg3,
+            path: '/services/reviews'
         },
         {
             title: 'Montaż stolarki budowlanej',
-            bg: bg6
+            bg: bg6,
+            path: '/services/assembly'
         }
     ]
 
@@ -38,9 +42,9 @@ const Services = () => {
             <div className='services-content'>
                 <div className='services-icons'>
                     {
-                        data.map(({bg, title}, index) => {
+                        data.map(({bg, title, path}, index) => {
                             return (
-                                <Tilt key={index} className="Tilt tilt-container" options={{ max : 25, scale: 1.05 }} >
+                                <Link key={index} to={path}><Tilt className="Tilt tilt-container" options={{ max : 25, scale: 1.05 }} >
                                     <div className='background-tilt' style={{
                                         background: `url(${bg}) center center no-repeat`,
                                         backgroundSize: 'cover'
@@ -51,7 +55,7 @@ const Services = () => {
                                             <div className='underline'></div>
                                         </div>
                                     </div>
-                                </Tilt>
+                                </Tilt></Link>
                             )
                         })
                     }

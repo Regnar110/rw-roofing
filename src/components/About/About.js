@@ -28,10 +28,9 @@ const About = () => {
                 <div className='site-content'>
                    <p>
                     Firma dekarska RW została założona w 2017 roku.
-                    Od momentu założenia obsłużyliśmy wielu klientów indywidualnych jak i firm.
-                    Codziennym celem naszej firmy jest zapewnienie 100% satysfakcji klienta i zapewnienie jak najlepszego doświadczenia naszym klientom.
-                    Od pierwszego kontaktu z nami, aż do zakończenia pracy i płatności, skupiamy się na Tobie, naszym kliencie, i upewniamy się, że wybierając naszą firmę dokonałeś najlepszego możliwego wyboru!
-                    Doświadczenie naszych dekarzy czyni naszą firmę konkurencyjną w środowisku branży pokryć dachowych. Nasza praca to zawsze dobra praca!
+                    Codziennym celem naszej firmy jest zapewnienie 100% satysfakcji klienta z naszych usług.
+                    Od pierwszego kontaktu z nami, aż do zakończenia pracy, skupiamy się na Tobie, naszym kliencie, i upewniamy się, że wybierając naszą firmę dokonałeś najlepszego możliwego wyboru!
+                    Doświadczenie naszych pracowników czyni naszą firmę konkurencyjną w środowisku branży pokryć dachowych. Nasza praca to zawsze dobra praca!
                    </p>
                 </div>
                 <div className='bars'>
@@ -78,6 +77,9 @@ const About = () => {
                     </div>
                     </ProgressBar>
                 </div>
+            </div>
+            <div className='inner-about'>
+                
             </div>
         </div>
         

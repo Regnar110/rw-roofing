@@ -4,7 +4,7 @@ import './footer.scss'
 import { Link } from 'react-router-dom'
 import tel from '../../assets/contact/tel.svg'
 import mail from '../../assets/contact/mail.svg'
-import goto from '../../assets/footer/goto.svg'
+import gotoblack from '../../assets/footer/goto-black.svg'
 
 const Footer = () => {
     return (
@@ -34,15 +34,15 @@ const Footer = () => {
                 </div>
                 <div className='shortcuts-small'>
                     <h2>Na skróty</h2>
-                    <Link className='footer-link' to='/'><img alt='route' src={goto} />Start</Link>
-                    <Link className='footer-link' to='/about'><img alt='route'src={goto} />O firmie</Link>
-                    <Link className='footer-link' to='/services'><img alt='route' src={goto} />Usługi</Link>
-                    <Link className='footer-link' to='/projects'><img alt='route' src={goto} />Realizacje</Link>
-                    <Link className='footer-link' to='/contact'><img alt='route' src={goto} />Kontakt</Link>
+                    <Link className='footer-link' to='/'><img alt='route' src={gotoblack} />Start</Link>
+                    <Link className='footer-link' to='/about'><img alt='route'src={gotoblack} />O firmie</Link>
+                    <Link className='footer-link' to='/services'><img alt='route' src={gotoblack} />Usługi</Link>
+                    <Link className='footer-link' to='/projects'><img alt='route' src={gotoblack} />Realizacje</Link>
+                    <Link className='footer-link' to='/contact'><img alt='route' src={gotoblack} />Kontakt</Link>
                 </div>
             </div>
             <div className='footer-bottom'>
-                <p>©Dekarstwo RW 2021 Rafał Wrycza <img alt='footer-rw' src={footer_logo}/></p>
+                <p>© Dekarstwo RW 2021 Rafał Wrycza <img alt='footer-rw' src={footer_logo}/></p>
             </div>
         </footer>
     )

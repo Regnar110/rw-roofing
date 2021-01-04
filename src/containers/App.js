@@ -85,8 +85,6 @@ function App() {
             <Route exact path='/services/roof-building' component={Services} />
             <Route exact path='/services/repairs' component={Services} />
             <Route exact path='/services/reviews' component={Services} />
-            <Route exact path='/services/roof-structures' component={Services} />
-            <Route exact path='/services/consulting-and-pricing' component={Services} />
             <Route exact path='/services/assembly' component={Services} />
       </Switch>
       <Warranty />

@@ -77,7 +77,8 @@ const Services = () => {
     {
       navContent: `Montaż stolarki budowlanej`,
       pathEndPoint: 'assembly',
-      header: 'Montaż stolarki budowlanej'
+      header: 'Montaż stolarki budowlanej',
+      contentLine1: 'Nasza firma oferuje również usługi z zakresu montażu stolarki budowlanej. Zajmujemy się  montażem okien i drzwi balkonowych, okien dachowych, drzwi zewnętrznych i wewnętrznych oraz montaż bram, osłon okiennych oraz drzwiowych. Wszystkie powierzone zadnia wykonywane są przez pracowników z odpowiednią wiedzą oraz doświadczeniem przy zachowaniu należytej precyzji i dokładności, tak aby efekt końcowy spełniał wszystkie oczekiwania klienta.'
     }
   ])
 

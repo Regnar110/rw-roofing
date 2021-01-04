@@ -16,8 +16,8 @@ const Warranty = () => {
                 <div className='content'>
                     <div className='image'><img alt='warranty' src={umbrella}/></div>
                     <div className='text-content'>
-                        <div className='warranty-header'>Gwarancja</div>
-                        <div className='warranty-text'>Na nasze usługi</div>
+                        <div className='warranty-header'>5 Lat</div>
+                        <div className='warranty-text'>gwarancji</div>
                     </div>
                 </div>
                 <div className='content'>
@@ -32,7 +32,7 @@ const Warranty = () => {
                     <div className='image'><img alt='warranty' src={professional}/></div>
                     <div className='text-content'>
                         <div className='warranty-header'>Profesjonalne</div>
-                        <div className='warranty-text'>oraz fachowe usługi</div>
+                        <div className='warranty-text'>Oraz fachowe usługi</div>
                     </div>
                 </div>
             </div>
