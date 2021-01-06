@@ -36,8 +36,6 @@ const Services = () => {
         <div className='services'>
             <div className='header'>
                 <h1>Nasza oferta</h1>
-                <p>Zapraszam do zapoznania sie z ofertą naszych usług dekarskich.</p>
-                <p>Bardzo chętnie odpowiemy również na państwa pytania dotyczące świadczonych usług.</p>
             </div>
             <div className='services-content'>
                 <div className='services-icons'>
@@ -61,10 +59,8 @@ const Services = () => {
                     }
                 </div>
                 <div className='more-services'>
-                    <p>Aby dowiedzieć się więcej o naszych usługach kliknij niżej.</p>
                     <Link to='/services'><div className='detailsBtn'>Więcej</div></Link>
                 </div>
-                
             </div>
         </div>
     )

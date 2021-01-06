@@ -1,4 +1,3 @@
-// import { Frame, Scroll, useCycle } from "framer"
 import { useEffect, useState } from 'react';
 import {Switch, Route} from 'react-router-dom'
 import './App.scss';
@@ -61,7 +60,7 @@ function App() {
   }
 
   useEffect(() => { // check if window width is less or equal 621px and do action depending on this data
-    windowW <= 621 ?
+    windowW <= 650 ?
       setNav('small')
       :
       setNav('large')
