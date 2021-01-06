@@ -3,11 +3,13 @@ import './about.scss'
 import ProgressBar from 'react-customizable-progressbar'
 import Header from '../Header/Header'
 import background from '../../assets/outerabout/outer-about-bg.jpg'
+import { SRLWrapper, useLightbox } from "simple-react-lightbox";
 
 
 const About = () => {
     const [progress, setProgress] = useState(0);
-
+    const { openLightbox } = useLightbox()
+    
     useEffect(() => {
         let timeout; //zmienna słuząca potem do przechowania operacji asynchronicznej i do czyszczeina po niej
         if (progress < 100) {
@@ -17,6 +19,45 @@ const About = () => {
         }
         return () => { clearTimeout(timeout) }; // TZW CleanUP function odpalana przy wymontowaniu komponentu. clearTimeout sprząta po setTimeout - usuwa jego efekt i działanie oraz zapobiega przed dalszym działaniem setTimeout.
       }, [progress]);
+
+      const options = {
+          buttons: {
+            backgroundColor: 'rgba(30,30,36,0.8)',
+            iconColor: 'rgba(255, 255, 255, 0.8)',
+            iconPadding: '10px',
+            showAutoplayButton: false,
+            showCloseButton: true,
+            showDownloadButton: false,
+            showFullscreenButton: true,
+            showNextButton: false,
+            showPrevButton: false,
+            showThumbnailsButton: false,
+            size: '40px'
+          },
+          thumbnails: {
+              thumbnailsGap: '10px 10px'
+          }
+      }
+      const srlImages = [
+        {
+            src: 'https://utils.s.kaspersky-labs.com/courses/cert/completion_english.png',
+        },
+        {
+            src: 'https://utils.s.kaspersky-labs.com/courses/cert/completion_english.png',
+        },
+        {
+            src: 'https://utils.s.kaspersky-labs.com/courses/cert/completion_english.png',
+        },
+        {
+            src: 'https://utils.s.kaspersky-labs.com/courses/cert/completion_english.png',
+        },
+        {
+            src: 'https://utils.s.kaspersky-labs.com/courses/cert/completion_english.png',
+        },
+        {
+            src: 'https://utils.s.kaspersky-labs.com/courses/cert/completion_english.png',
+        }
+      ]
 
     return (
         <div>
@@ -79,7 +120,20 @@ const About = () => {
                 </div>
             </div>
             <div className='inner-about'>
-                
+                <h1> Kwalifikacje </h1>
+                <SRLWrapper options={options}>
+                   {
+                       srlImages.map(({src}, index) => (
+                        <div key={index} className='image-container'>
+                            <div className='image'>
+                                <img alt='group-element' src={src}/>
+                                <div onClick={() => openLightbox(index)} className='img-footer'><i className="fas fa-search-plus fa-9x"></i></div>
+                            </div>
+                            
+                        </div>
+                       ))
+                   }
+                </SRLWrapper>
             </div>
         </div>
         

@@ -10,6 +10,10 @@ import bg6 from '../../assets/services/bg6.jpg'
 import Serviceitem from  './service-item/Service_item'
 import goto from '../../assets/footer/goto.svg'
 import Servicemain from './service-main/Servicemain'
+import reviews from '../../assets/service-items/reviews.jpg'
+import assembly from '../../assets/service-items/assembly.jpg'
+import repair from '../../assets/service-items/repair.jpg'
+import covering from '../../assets/service-items/covering.jpg'
 
 const Services = () => {
     const [sliderContent] = useState([ // to potem z serwera i bazy danych. DO ZROBIENIA
@@ -41,6 +45,7 @@ const Services = () => {
       navContent: `Pokrycia dachów`,
       pathEndPoint: 'roof-building',
       header: 'Pokrycia dachów',
+      image: covering,
       contentLine1: `Najczęściej konstrukcja dachów na budynkach mieszkalnych to szkielet i pokrycie dachu. 
       Takie dachy są zbudowane głównie z drewna i przyjmują wiele różnych kształtów i są pokryte różnymi materiałami.`,
       contentLine2: `Większość ludzi myśli o pokryciu dachu, gdy ktoś mówi o dachu. System pokryć dachowych jest bardzo złożony i składa się z zestawu materiałów i rozwiązań technicznych. 
@@ -54,6 +59,7 @@ const Services = () => {
       navContent: `Naprawy`,
       pathEndPoint: 'repairs',
       header: 'Naprawa i wymiana',
+      image: repair,
       contentLine1: `Podejmowanie dobrych decyzji jest kluczem do minimalizacji krótko i długoterminowych kosztów związanych z remontem domu. Jest to szczególnie ważne w przypadku dużych, złożonych prac, takich jak ponowne dachowanie na wypadek jego uszkodzenia. W tym konkretnym przypadku decyzję należy podjąć jak najszybciej aby zminimalizować prawdopodobieństwo dalszego rozprzestrzeniania się uszkodzeń w strukturze dachu.
       Decyzja ta będzie dotyczyć tego, czy po prostu załatać przecieki i uszkodzone obszary, czy też należy częściowo lub całkowicie wymienić dach. Jeśli wybierzesz tę drugą opcję, będziesz musiał również zdecydować, czy pokryć istniejący dach, czy go usunąć.`,
       contentLine2: `Pamiętaj jednak, że wymiana dachu to nie przelewki. Wykonywanie napraw dachów przez osoby nie przeszkolone do tego i bez odpowiedniego doświadczenie może przewyższyć znacznie początkowe koszty napraw wykonanych przez firmy specjalizujące sie w tego typu zadaniach.`,
@@ -63,6 +69,7 @@ const Services = () => {
       navContent: `Przeglądy`,
       pathEndPoint: 'reviews',
       header: 'Przeglądy',
+      image: reviews,
       contentLine1: `Dach Twojego domu to pierwsza linia obrony przed burzami i ekstremalnymi warunkami pogodowymi, niezależnie od tego, czy jest to śnieg spadający w ciągu nocy, czy też silne wiatry, które przedzierają się przez miasto.
       Kiedy właściciele domów ślepo wierzą w swój dach i całkowicie go zaniedbują, aż do pojawienia się pierwszych oznak przecieku w suficie, mogą już borykać się z dużo większymi problemami - na przykład niechcianymi problemami strukturalnymi, rozwojem pleśni lub uszkodzoną izolacją.
       Jeżeli z jakiegoś powodu masz przeczucie że to czas aby ktoś spojrzał fachowym okiem na Twój dach nie zwlekaj.`,
@@ -78,6 +85,7 @@ const Services = () => {
       navContent: `Montaż stolarki budowlanej`,
       pathEndPoint: 'assembly',
       header: 'Montaż stolarki budowlanej',
+      image: assembly,
       contentLine1: 'Nasza firma oferuje również usługi z zakresu montażu stolarki budowlanej. Zajmujemy się  montażem okien i drzwi balkonowych, okien dachowych, drzwi zewnętrznych i wewnętrznych oraz montaż bram, osłon okiennych oraz drzwiowych. Wszystkie powierzone zadnia wykonywane są przez pracowników z odpowiednią wiedzą oraz doświadczeniem przy zachowaniu należytej precyzji i dokładności, tak aby efekt końcowy spełniał wszystkie oczekiwania klienta.'
     }
   ])

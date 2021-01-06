@@ -3,7 +3,7 @@ import './service_item.scss'
 import background from '../../../assets/outerabout/outer-about-bg.jpg'
 
 
-const Serviceitem = ({ header, contentLine1, contentLine2, contentLine3 }) => {
+const Serviceitem = ({ header, contentLine1, contentLine2, contentLine3, image }) => {
     return(
         <div className='service-item'>
             <div className='service-item-header'>
@@ -11,7 +11,7 @@ const Serviceitem = ({ header, contentLine1, contentLine2, contentLine3 }) => {
             </div>
             <div className='service-item-content'>
                 <div className='image-container' style={{
-                    background: `url(${background}) center center no-repeat`,
+                    background: `url(${image}) center center no-repeat`,
                     backgroundSize: `cover`
                 }} />
                 <div className='text-content'>

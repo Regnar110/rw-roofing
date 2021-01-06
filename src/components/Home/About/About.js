@@ -7,9 +7,6 @@ import { Link } from 'react-router-dom'
 const About = () => {
     return (
         <div className='about'>
-            <div className='header'>
-                <h1></h1>
-            </div>
             <div className='about-content' style={{
                 background: `url(${aboutBg}) center center no-repeat`,
                 backgroundSize: 'cover'

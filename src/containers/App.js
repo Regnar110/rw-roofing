@@ -55,7 +55,7 @@ function App() {
   const windowW= window.innerWidth;
 
   const changeNavBar = () => { // change nav-bar when resizing window
-    const navBarRender = window.matchMedia("(max-width: 620px)")
+    const navBarRender = window.matchMedia("(max-width: 650px)")
       navBarRender.matches ? setNav('small') : setNav('large');
   }
 

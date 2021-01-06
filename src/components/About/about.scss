@@ -46,6 +46,92 @@
     }
 }
 
+.inner-about {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.096);
+
+    h1 {
+        margin: 0;
+        padding: 30px;
+        font-size: calc(30px + (50 - 30) * ((100vw - 280px) / (1600 - 280)));
+        text-align: center;
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .image-container {
+            position: relative;
+            margin: 20px 0;
+            width: 33%;
+            height: 450px;
+            cursor: pointer;
+            
+            .image {
+                position: absolute;
+                width: 350px;
+                height: 100%;
+                overflow: hidden;
+                transition: 0.3s linear;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+            .img-footer {
+                position: absolute;
+                width: 355px;
+                height: 100%;
+                color: rgba(255, 255, 255, 0.61);
+                background-color: rgba(0, 0, 0, 0.589);
+                opacity: 0;
+                transition: 0.2s linear;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.03);
+                -webkit-box-shadow: 0px 0px 47px -7px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 47px -7px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 47px -7px rgba(0,0,0,0.75);
+            }
+        }
+
+
+    }
+        @media screen and(max-width: 1100px) {
+            .image-container {
+                width: 50%;
+            }
+        }
+
+        @media screen and(max-width: 720px) {
+            .image-container {
+                width: 100%;
+            }
+        }
+
+        @media screen and(max-width: 370px) {
+            .image-container {
+                width: 100%;
+
+                .image {
+                    width: 270px;
+                }
+            }
+        }
+    }
+}
+
+
+
 
 @media screen and (max-width: 1200px) {
     .outer-about {
